@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+    font: inherit;
+    color: inherit;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #333;
+}
+
+p{
+    max-width: 600px;
+}
+
+#container{
+    max-width: 1200px;
+    padding: 24px;
+    margin: 0 auto;
+    
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 250px;
+}
+
+.logotop{
+    width: 130px;
+}
+
+.navigation{
+    flex-grow: 1;
+    margin-left: 40px;
+}
+
+.navigation--item{
+    text-decoration: none;
+    color: #bdbdbd;
+    margin-left: 24px;
+}
+.navigation--item:hover{
+    color: red;
+}
+
+.navigation--item:first-child{
+    margin-left: 0;
+}
+
+.navigation--item__active{
+    margin-bottom: 0px;
+    color: red;
+    border-bottom: thin red solid;
+}
+
+.navigation--button{
+    border: none;
+    background: rgb(255,28,28);
+    background: linear-gradient(90deg, rgba(255,28,28,1) 1%, rgba(102,108,139,1) 100%); 
+    padding: 10px 36px;
+    border-radius: 50px;
+    transition: transform .5s;
+    color: white;
+}
+
+.btn--up button:hover{
+    border: none;
+    transform: scale(1.1);
+    background: #1DD05D;
+    color: white;
+}
+
+.menu--button{
+    flex-grow: 1;
+    display: none;
+}
+
+.menu--button button{
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+
+.mobile--navigation{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    padding: 24px;
+    display: none;
+    transform: translateX(-100%);
+    transition: transform 300ms ease-in-out;
+}
+
+.mobile--navigation__open{
+    transform: translateX(0);
+}
+
+.mobile--navigation--header{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.mobile--navigation--item{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #bdbdbd;
+    display: block;
+    margin-bottom: 24px;
+}
+.mobile--navigation--item:hover{
+    color: red;
+}
+
+.mobile--navigation--item__active p{
+    margin-bottom: 0px;
+    color: red;
+    border-bottom: thin red solid;
+}
+
+.active{
+    display: flex;
+}
+
+.close--button button{
+    border: none;
+    background: transparent;
+    size: 1.5rem;
+}
+
+main{
+    display: flex;
+    align-items: center;
+}
+
+.main--content{
+    flex: 1;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.main--img{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+.main--img img{
+    width: block;
+}
+
+.headline{
+    font-size: 52px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid red;
+    font-size: 50px;
+}
+
+.description{
+    color: #b2b2b2;
+    margin: 0;
+    padding: 0;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.play--button--align{
+    min-height: 60px;
+}
+
+.play--button{
+    padding: 10px 36px;
+    border: 1px solid #bdbdbd;
+    border-radius: 50px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    background: -webkit-linear-gradient(
+        45deg, rgba(255,28,28,1) 1%, rgba(102,108,139,1) 100%
+    );
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: block;
+    transition: transform .6s;
+}
+.play--button--align button:hover{
+    border: none;
+    transform: scale(1.1);
+    background: red;
+    background-clip:inherit;
+    -webkit-background-clip: inherit;
+    -webkit-text-fill-color: white;
+    color: white;
+}
+
+.fas{
+    margin-right: 10px !important;
+}
+
+footer{
+    display: flex;
+    color: #bdbdbd;
+}
+
+.socials{
+    margin: right 40px;
+}
+
+.socials--item{
+    text-decoration: none;
+    margin-right: 20px;
+}
+.socials--item:hover{
+    color: red;
+}
+
+.name{
+    color: rgba(255, 0, 0, 0.8);
+}
+
+@media only screen and (max-width: 660px){
+    main{
+        display: block;
+    }
+
+    .headline{
+        border: none;
+        font-size: 10vw;
+    }
+
+    header .logotop{
+        display: none;
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    .mobile--navigation{
+        display: block;
+    }
+
+    .menu--button{
+        display: block;
+    }
+
+    .mobile--navigation--header{
+        display: flex;
+    }
+
+    .play--button--align{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}
