@@ -9,9 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Skrillex</title>
 </head>
 <body>
+    <!--LOADER-->
+    <div class="loadLogos">
+        <div class="load">
+            <img src="/img/logo.png" alt="">
+            <div class="typeando">
+                <b>Loading...</b>
+            </div>
+        </div>
+    </div>
+
     <div class="mobile--navigation" id="mobile--navigation" >
         <div class="mobile--navigation--header">
         <img src="img/logo.png" alt="" class="logotop">
@@ -96,6 +106,13 @@
                 element.classList.add("mobile--navigation__open");
             }
         }
+
+        let loaderLogo = document.querySelector('.loadLogos');
+
+        window.addEventListener('load', function() {
+            loaderLogo.style.display = 'none';
+        });
+
     </script>
 </body>
 </html>
