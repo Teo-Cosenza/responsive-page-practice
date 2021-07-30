@@ -1,0 +1,33 @@
+.picAbout{
+    width:100%;
+	height: 400px;
+	object-fit: cover;
+    object-position: 10% 10%;
+}
+
+.mainImg{
+    flex: 1;
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex-direction: column;
+}
+
+.mainText{
+    position: relative;
+    text-align: center;
+    color: white;
+    bottom: 3rem;
+}
+
+/*Text*/
+.aboutTitle{
+    border: 2px solid white;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 1.5rem;
+    background-color: rgb(20%, 50%, 50%, 0.1);
+}

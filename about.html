@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/7323fd1c55.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="about.css">
+        <title>About - Skrillex</title>
+    </head>
+<body>
+    <!--LOADER-->
+    <div class="loadLogos">
+        <div class="load">
+            <img src="/img/logo.png" alt="">
+            <div class="typeando">
+                <b>Loading...</b>
+            </div>
+        </div>
+    </div>
+    <!--MOBILE NAVIGATION-->
+    <div class="mobile--navigation" id="mobile--navigation" >
+        <div class="mobile--navigation--header">
+        <img src="img/logo.png" alt="" class="logotop">
+        <div class="close--button" onclick="toggleMobileNavigation()">
+            <button>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        </div>
+        <a href="" class="mobile--navigation--item mobile--navigation--item__active"><div class="active"><p>Home</p></div></a>
+        <a href="about.html" class="mobile--navigation--item">About</a>
+        <a href="" class="mobile--navigation--item">Events</a>
+        <a href="" class="mobile--navigation--item">Contact</a>
+    </div>
+    <!--CONTAINER-->
+    <div id="container">
+        <!--HEADER-->       
+        <header>
+            <img src="img/logo.png" alt="" class="logotop">       
+            <nav class="navigation">
+                <a href="index.html" class="navigation--item">Home</a>
+                <a href="" class="navigation--item navigation--item__active">About</a>
+                <a href="" class="navigation--item">Events</a>
+                <a href="" class="navigation--item">Contact</a>
+            </nav>          
+            <div class="menu--button"  onclick="toggleMobileNavigation()">
+                <img src="img/short-log.png" alt="" class="shortLogo">
+                <button>
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="btn--up">
+                <button class="navigation--button">Spotify</button>
+            </div>
+        </header>
+        <!--MAIN-->
+        <div class="mainContent">
+            <div class="mainImg">
+                <img src="img/pic-about.jpeg" class="picAbout">
+                <div class="mainText">
+                    <b class="aboutTitle">ABOUT</b>
+                </div>           
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <!--SCRIPT-->
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
